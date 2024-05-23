@@ -1,0 +1,671 @@
+*{    /*for big screen */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+}
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:35px;
+    width:full;
+    height:112px;
+    background-color:#FFF1E6;
+    padding-left:25px;
+    
+
+}
+
+.headerUl{
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    gap:8px;
+}
+.headerUl:hover{
+    cursor:pointer
+
+}
+
+
+.HtextColor{
+    color:#4D2C19
+}
+.Moreoption{
+    color:#E9811F;
+}
+
+.appoimentbtn{
+    padding:8px;
+    border-radius:8px;
+    border:none;
+    background-color:#E9811F;
+    color:white;
+}
+.appoimentbtn:hover{
+    cursor:pointer;
+    background-color:orange;
+}
+.helpbtn{
+    padding:8px;
+    border-radius:8px;
+    border-color:#E9811F;
+    background-color:#FFF1E6;
+    color:#4D2C19;
+ 
+
+}
+.helpbtn:hover{
+    cursor:pointer;
+    background-color:orange;
+}
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+
+
+@media (min-width: 992px) {
+    .header {
+        height: 120px;
+        padding-left: 50px;
+    }
+    .colve {
+        font-size: 45px;
+    }
+    .dental {
+        font-size: 12px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding-left: 15px;
+    }
+    .headerUl {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .colve {
+        font-size: 30px;
+    }
+    .dental {
+        font-size: 10px;
+    }
+
+  
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding-left: 10px;
+    }
+    .headerUl {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .colve {
+        font-size: 25px;
+    }
+    .dental {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+.articale1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    background-color:#B5C1A6;
+}
+.section1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+.dentalhealth{
+      font-size:50px;
+      color:#303030;
+}
+.dentalcare{
+    font-size:20px;
+    color:#4E4E4E;
+    
+}
+.buynowbtn{
+    padding:8px 16px;
+    border-radius:8px;
+    border:none;
+    background-color:#E9811F;
+    color:white;
+
+}
+.buynowbtn:hover{
+    cursor:pointer;
+    background-color:orange;
+}
+#selectcity{
+    padding:8px 20px;
+    border-radius:8px;
+    border:2px solid-green;
+
+}
+.artical2{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+       
+.worldclassclinic{
+    font-size:30px;
+    color:#303030;
+}
+.gimg{
+       width:200px;
+       height:104px;
+}
+.section5{
+       display:flex;
+       flex-direction:column;
+       gap:12px 0px
+}
+.Locatebtn:hover{
+    cursor:pointer;
+    background-color:orange;
+
+}
+.Locatebtn{
+    padding:8px 20px;
+    border-radius:8px;
+    border:none;
+    background-color:#E9811F;
+    color:white;
+}
+
+/* Media Queries */
+
+/* For screens up to 1200px wide */
+@media (max-width: 1200px) {
+    .dentalhealth {
+        font-size: 45px; /* Reduce font size */
+    }
+
+    .worldclassclinic {
+        font-size: 25px; /* Reduce font size */
+    }
+}
+
+/* For screens up to 992px wide */
+@media (max-width: 992px) {
+    .articale1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .artical2 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .dentalhealth {
+        font-size: 40px; /* Reduce font size */
+    }
+
+    .dentalcare {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .gimg {
+        width: 180px; /* Reduce image size */
+        height: 94px; /* Reduce image size */
+    }
+}
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .dentalhealth {
+        font-size: 35px; /* Reduce font size */
+    }
+
+    .dentalcare {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .worldclassclinic {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .gimg {
+        width: 160px; /* Reduce image size */
+        height: 84px; /* Reduce image size */
+    }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+    .dentalhealth {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .dentalcare {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .worldclassclinic {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .gimg {
+        width: 140px; /* Reduce image size */
+        height: 74px; /* Reduce image size */
+    }
+
+    .buynowbtn, .Locatebtn {
+        padding: 6px 12px; /* Reduce padding */
+    }
+
+    #selectcity {
+        padding: 6px 16px; /* Reduce padding */
+    }
+}
+
+
+
+
+
+.alldentalissu{
+    display:flex;
+    align-items;:center;
+    justify-content:center;
+
+}
+.dentalimg{
+    width:full;
+    height:600px
+
+}
+
+.contactframe{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:36px;
+   margin:60px 0px;
+  
+
+}
+
+.contactinfo{
+    width:660px;
+    height:786px;
+    padding-top:28px;
+    background-color:#FFEFE2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:20px;
+    gap:52px;
+    
+   
+
+}
+.imgsection{
+    width:934px;
+    height:786px;
+    
+}
+.Hcontact{
+    font-size:30px;
+    color:#303030;
+}
+
+.inputcontact{
+    padding:8px 16px;
+    border-radius:16px;
+    border:none;
+    background-color:;
+    color:white;
+}
+
+.contactdiv2{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+.contactbtn{
+    padding:8px 16px;
+    border-radius:16px;
+    border:none;
+    background-color:#E9811F;
+    color:white;
+
+}
+.contactbtn:hover{
+    cursor:pointer;
+    background-color:orange;
+}
+
+.selectconcern{
+    padding:8px 16px;
+    border-radius:16px;
+    border:none;
+   
+}
+
+
+
+/* Media Queries */
+
+/* For screens up to 1200px wide */
+@media (max-width: 1200px) {
+    .dentalimg {
+        height: 500px; /* Reduce image height */
+    }
+}
+
+/* For screens up to 992px wide */
+@media (max-width: 992px) {
+    .alldentalissu {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .dentalimg {
+        height: 400px; /* Reduce image height */
+    }
+}
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .dentalimg {
+        height: 300px; /* Further reduce image height */
+    }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+    .dentalimg {
+        height: 200px; /* Further reduce image height */
+    }
+}
+
+
+
+
+/* For screens up to 1200px wide */
+@media (max-width: 1200px) {
+    .contactinfo {
+        width: 600px; /* Reduce width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .imgsection {
+        width: 800px; /* Reduce width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .Hcontact {
+        font-size: 28px; /* Reduce font size */
+    }
+}
+
+/* For screens up to 992px wide */
+@media (max-width: 992px) {
+    .contactframe {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .contactinfo {
+        width: 90%; /* Use percentage for responsive width */
+        height: auto; /* Adjust height to auto */
+        padding: 20px; /* Adjust padding */
+        gap: 40px; /* Adjust gap */
+    }
+
+    .imgsection {
+        width: 90%; /* Use percentage for responsive width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .Hcontact {
+        font-size: 26px; /* Reduce font size */
+    }
+}
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .contactinfo {
+        width: 100%; /* Full width */
+        padding: 16px; /* Adjust padding */
+    }
+
+    .imgsection {
+        width: 100%; /* Full width */
+    }
+
+    .Hcontact {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .inputcontact {
+        padding: 6px 12px; /* Adjust padding */
+    }
+
+    .contactbtn {
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+    .contactinfo {
+        padding: 12px; /* Adjust padding */
+    }
+
+    .imgsection {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .Hcontact {
+        font-size: 22px; /* Reduce font size */
+    }
+
+    .inputcontact {
+        padding: 4px 8px; /* Adjust padding */
+    }
+
+    .contactbtn {
+        padding: 4px 8px; /* Adjust padding */
+    }
+
+    .selectconcern {
+        padding: 4px 8px; /* Adjust padding */
+    }
+}
+
+
+
+
+.footer{
+    width:full;
+    height:400px;
+    background:#3D2010;
+}
+.footerarticale{
+    display:flex;
+    flex-direction:column;
+    
+   
+
+}
+.footersection1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    margin:20px;
+    
+
+}
+.footerlogo{
+      width:500px;
+      height:200px;
+}
+.sectionlogo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.ulheading{
+    color:white;
+    font-size:20px;
+}
+.footerUl{
+    list-style-type: none;
+    color:#9F9F9F;
+    padding:8px 0px;
+
+}
+.footerUl:hover{
+   cursor:pointer;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: ;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: ;
+    color: white;
+  }
+  .fa-instagram {
+    background: ;
+    color: white;
+  }
+  
+ 
+/* Media Queries */
+
+/* For screens up to 1200px wide */
+@media (max-width: 1200px) {
+    .footerlogo {
+        width: 400px; /* Reduce logo width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .ulheading {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .fa {
+        padding: 15px; /* Adjust padding */
+        font-size: 25px; /* Adjust font size */
+        width: 25px; /* Adjust width */
+    }
+}
+
+/* For screens up to 992px wide */
+@media (max-width: 992px) {
+    .footersection1 {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .footerlogo {
+        width: 300px; /* Reduce logo width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .ulheading {
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .fa {
+        padding: 10px; /* Adjust padding */
+        font-size: 20px; /* Adjust font size */
+        width: 20px; /* Adjust width */
+    }
+}
+
+/* For screens up to 768px wide */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Adjust height to auto */
+    }
+
+    .footerlogo {
+        width: 250px; /* Reduce logo width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .ulheading {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .fa {
+        padding: 8px; /* Adjust padding */
+        font-size: 18px; /* Adjust font size */
+        width: 18px; /* Adjust width */
+    }
+}
+
+/* For screens up to 576px wide */
+@media (max-width: 576px) {
+    .footersection1 {
+        margin: 10px; /* Reduce margin */
+    }
+
+    .footerlogo {
+        width: 200px; /* Reduce logo width */
+        height: auto; /* Adjust height to auto */
+    }
+
+    .ulheading {
+        font-size: 12px; /* Reduce font size */
+    }
+
+    .fa {
+        padding: 5px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
+        width: 16px; /* Adjust width */
+    }
+}
+
+
